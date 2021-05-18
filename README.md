@@ -7,6 +7,8 @@ The `.Replace()` method accepts function objects, like `Result := String.Replace
 
 You can use the "global" flag `g` to get all matches from a string.
 
+## Version
+
 Current version is alpha (it seems to work for me without problems, but I might want or need to change substantial things).
 
 ## Installation:
