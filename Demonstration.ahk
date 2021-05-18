@@ -3,7 +3,7 @@
 
 
 String = Dates X20170523120123 Y20050423220133 Z20070523120123
-Regex = Ogi)(?<Name>x|Y|z)(?<Number>\d+)
+Regex = Ogi)(?<Name>x|Y|z)(?<Number>\d+)  ; Uses the global flag g to get all matches from the string.
 Matches := String.Match(Regex)
 
 ; Show the array of matches in a message box:
