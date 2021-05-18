@@ -10,7 +10,9 @@ Matches := String.Match(Regex)
 Matches.Msgbox()
 
 ; Format the dates in the string and return the new string:
-Result := String.Replace( Regex, Func("ReplaceFunc") ).Msgbox()
+Result := String
+          .Replace( Regex, Func("ReplaceFunc") )
+	  .Msgbox()
 
 ; Show all matches from the years 2005, 2006, and 2007:
 For Index, Match in Matches
