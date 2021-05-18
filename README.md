@@ -11,6 +11,8 @@ You can use the "global" flag `g` to get all matches from a string.
 
 Current version is alpha (it seems to work for me without problems, but I might want or need to change substantial things).
 
+In addition, various bits are spaghetti code and uncommented, so viewer discretion advised.
+
 ## Installation:
 Put the files `SyntaxSugar.ahk` and `ObjectToString.ahk` in your `Lib` folder (e.g. `...\Program Files\Autohotkey\Lib\`).
 
