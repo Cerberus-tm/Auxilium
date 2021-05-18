@@ -6,11 +6,13 @@ String = Dates X20170523120123 Y20050423220133 Z20070523120123
 Regex = Ogi)(?<Name>x|Y|z)(?<Number>\d+)
 Matches := String.Match(Regex)
 
+; Show the array of matches in a message box:
 Matches.Msgbox()
 
+; Format the dates in the string and return the new string:
 Result := String.Replace( Regex, Func("ReplaceFunc") ).Msgbox()
-; Do something with Result.
 
+; Show all matches from the years 2005, 2006, and 2007:
 For Index, Match in Matches
 	If Match.0.Contains("2005,2006,2007")
 		Msgbox % "Date " Match.Name " was long ago."
