@@ -14,8 +14,8 @@ Result := String.Replace( Regex, Func("ReplaceFunc") ).Msgbox()
 
 ; Show all matches from the years 2005, 2006, and 2007:
 For Index, Match in Matches
-	If Match.0.Contains("2005,2006,2007")
-		Msgbox % "Date " Match.Name " was long ago."
+	If Match.Number.Contains("2005,2006,2007")
+		Msgbox % "Date " Match.Name " was long ago (" Match.Number.Substr(1, 4) ")."
 
 ReplaceFunc(Match, CurrentMatches, String){
 	FormatTime, TimeString, % Match.Number, dddd MMMM d, yyyy hh:mm:ss tt
