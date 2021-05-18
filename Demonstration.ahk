@@ -10,7 +10,6 @@ Matches.Msgbox()
 
 String.Replace( Regex, Func("ReplaceFunc") ).Msgbox()
 
-
 For Index, Match in Matches
 	If Match.0.Contains("2005,2006,2007")
 		Msgbox % "Date " Match.Name " was long ago."
