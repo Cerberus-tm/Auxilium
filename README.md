@@ -9,7 +9,7 @@ Both `.Match()` and `.Replace()` use regular expressions.
 
 You can use the "global" flag `g` to get all matches from a string.
 
-Trying to access non-existing indexes or names on match objects gives you an error message. The same applies to non-existing properties or methods of strings, or when you use the wrong number of arguments in a string method.
+Trying to access non-existing indices or names on match objects gives you an error message. The same applies to non-existing properties or methods of strings, or when you use the wrong number of arguments in a string method.
 
 Such error messages can be suppressed like so: `"Hello".Silent().BadPropertyName`"
 
