@@ -3,7 +3,9 @@ Syntax sugar for Autohotkey: you can treat strings as objects, and use a few ext
 
 You can do e.g. `"Hello".Match("g)l").Msgbox()` or `"Hello Mr".Split(" ").Msgbox()`.
 
-The `.Replace()` method accepts function objects, like `Result := String.Replace("gi)hello", Func("MyReplacementFunc"))` (see `Demonstration.ahk`). Both Match and Replace use regular expressions.
+The `.Replace()` method accepts function objects, like `Result := String.Replace("gi)hello", Func("MyReplacementFunc"))` (see `Demonstration.ahk`).
+
+Both `.Match()` and `.Replace()` use regular expressions.
 
 You can use the "global" flag `g` to get all matches from a string.
 
