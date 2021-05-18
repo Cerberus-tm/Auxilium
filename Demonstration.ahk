@@ -8,7 +8,8 @@ Matches := String.Match(Regex)
 
 Matches.Msgbox()
 
-String.Replace( Regex, Func("ReplaceFunc") ).Msgbox()
+Result := String.Replace( Regex, Func("ReplaceFunc") ).Msgbox()
+; Do something with Result.
 
 For Index, Match in Matches
 	If Match.0.Contains("2005,2006,2007")
