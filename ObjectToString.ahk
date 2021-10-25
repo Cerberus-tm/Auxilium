@@ -1,4 +1,5 @@
 /*
+Version 2021-10-25
 Partly thanks to Tidbit.
 Also handles strings.
 
@@ -39,7 +40,7 @@ ObjectToString(object, Depth=5, indentLevel="", IncludeBase=False){
    ;    List .= indentLevel "CLASS " object.__Class "`n"
    Else
    {
-
+      Looped := False
       Try
       {
          for key,value in object
